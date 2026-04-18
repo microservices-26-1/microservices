@@ -1,0 +1,12 @@
+[submodule "api/product"]
+	path = api/product
+	url = https://github.com/microservices-26-1/product.git
+[submodule "api/order"]
+	path = api/order
+	url = https://github.com/microservices-26-1/order
+[submodule "api/gateway-service"]
+	path = api/gateway-service
+	url = https://github.com/microservices-26-1/gateway-service
+[submodule "api/exchange"]
+	path = api/exchange
+	url = https://github.com/microservices-26-1/exchange
