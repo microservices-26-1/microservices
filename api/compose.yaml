@@ -14,6 +14,11 @@ services:
       POSTGRES_USER: ${DB_USER:-store}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-devpass}
       POSTGRES_DB: ${DB_NAME:-store}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-store}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   gateway:
     build:
@@ -25,3 +30,34 @@ services:
       CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-*}
     ports:
       - 8080:8080
+
+  
+  account:
+    build:
+      context: ./account-service
+      dockerfile: Dockerfile
+    hostname: account
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_DB: ${DB_NAME:-store}
+      DATABASE_USERNAME: ${DB_USER:-store}
+      DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
+    deploy:
+      replicas: 1
+    depends_on:
+      db:
+        condition: service_healthy
+
+  auth:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    hostname: auth
+    deploy:
+      replicas: 1
+    environment:
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-jYCiN0YPiaBP53bGJi/kjfw79HW7xnBu9UPoD/QFFAE=}
+      JWT_HTTP_ONLY: ${JWT_HTTP_ONLY:-true}
+    depends_on:
+      - account
