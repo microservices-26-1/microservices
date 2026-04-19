@@ -10,3 +10,15 @@
 [submodule "api/exchange"]
 	path = api/exchange
 	url = https://github.com/microservices-26-1/exchange
+[submodule "api/auth"]
+	path = api/auth
+	url = https://github.com/microservices-26-1/auth
+[submodule "api/auth-service"]
+	path = api/auth-service
+	url = https://github.com/microservices-26-1/auth-service
+[submodule "api/account"]
+	path = api/account
+	url = https://github.com/microservices-26-1/account
+[submodule "api/account-service"]
+	path = api/account-service
+	url = https://github.com/microservices-26-1/account-service
