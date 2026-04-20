@@ -22,3 +22,6 @@
 [submodule "api/account-service"]
 	path = api/account-service
 	url = https://github.com/microservices-26-1/account-service
+[submodule "web/web"]
+	path = web/web
+	url = https://github.com/microservices-26-1/web.git
