@@ -25,3 +25,6 @@
 [submodule "web/web"]
 	path = web/web
 	url = https://github.com/microservices-26-1/web
+[submodule "api/product-service"]
+	path = api/product-service
+	url = https://github.com/microservices-26-1/product-service
