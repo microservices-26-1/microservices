@@ -16,15 +16,18 @@
 [submodule "api/account-service"]
 	path = api/account-service
 	url = https://github.com/microservices-26-1/account-service
-[submodule "web/web"]
-	path = web/web
-	url = https://github.com/microservices-26-1/web
 [submodule "api/order"]
 	path = api/order
 	url = https://github.com/microservices-26-1/order.git
-[submodule "api/order-service"]
-	path = api/order-service
-	url = https://github.com/microservices-26-1/order-service.git
 [submodule "api/product"]
 	path = api/product
 	url = https://github.com/microservices-26-1/product.git
+[submodule "web"]
+	path = web
+	url = https://github.com/microservices-26-1/web.git
+[submodule "api/order-service"]
+	path = api/order-service
+	url = https://github.com/microservices-26-1/order-service.git
+[submodule "api/product-service"]
+	path = api/product-service
+	url = https://github.com/microservices-26-1/product-service.git
