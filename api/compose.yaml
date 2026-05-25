@@ -79,6 +79,23 @@ services:
       db:
         condition: service_healthy
 
+  order:
+      build:
+        context: ./order-service
+        dockerfile: Dockerfile
+      hostname: order
+      environment:
+        DATABASE_HOST: db
+        DATABASE_PORT: 5432
+        DATABASE_DB: ${DB_NAME:-store}
+        DATABASE_USERNAME: ${DB_USER:-store}
+        DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
+      deploy:
+        replicas: 1
+      depends_on:
+        db:
+          condition: service_healthy
+
   exchange:
     build:
       context: ./exchange
@@ -86,3 +103,25 @@ services:
     hostname: exchange
     deploy:
       replicas: 1
+
+  prometheus:
+    image: prom/prometheus:latest
+    hostname: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./volume/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana-enterprise
+    hostname: grafana
+    ports:
+      - 3000:3000
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./volume/grafana:/var/lib/grafana
+      - ./volume/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources      
+    restart: always
+    depends_on:
+      - prometheus

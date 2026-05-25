@@ -1,9 +1,6 @@
 [submodule "api/gateway-service"]
 	path = api/gateway-service
 	url = https://github.com/microservices-26-1/gateway-service
-[submodule "api/exchange"]
-	path = api/exchange
-	url = https://github.com/microservices-26-1/exchange
 [submodule "api/auth"]
 	path = api/auth
 	url = https://github.com/microservices-26-1/auth
@@ -31,3 +28,6 @@
 [submodule "api/product-service"]
 	path = api/product-service
 	url = https://github.com/microservices-26-1/product-service.git
+[submodule "api/exchange"]
+	path = api/exchange
+	url = https://github.com/microservices-26-1/exchange.git
