@@ -13,9 +13,6 @@
 [submodule "api/account-service"]
 	path = api/account-service
 	url = https://github.com/microservices-26-1/account-service
-[submodule "api/order"]
-	path = api/order
-	url = https://github.com/microservices-26-1/order.git
 [submodule "api/product"]
 	path = api/product
 	url = https://github.com/microservices-26-1/product.git
@@ -31,3 +28,7 @@
 [submodule "api/exchange"]
 	path = api/exchange
 	url = https://github.com/microservices-26-1/exchange.git
+
+[submodule "api/order"]
+	path = api/order
+	url = https://github.com/microservices-26-1/order.git
