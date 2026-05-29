@@ -1,23 +1,21 @@
 site_name: Platforms, Microservices, DevOps and APIs
 site_author: Ana Beatriz da Cunha, Gustavo Santana
-site_url: https://insper.github.io/microservices
+site_description: Documentação do projeto de microservices - Insper 2026
+site_url: https://microservices-26-1.github.io/microservices
 repo_url: https://github.com/microservices-26-1/microservices
 repo_name: microservices-26-1/microservices
 
 theme:
   name: material
+  language: pt-BR
 
   palette:
-
-    # Dark mode
     - scheme: slate
       primary: deep purple
       accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Light mode
-
-    # Light mode
     - scheme: default
       primary: deep purple
       accent: cyan
@@ -28,11 +26,32 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - content.code.copy
-    - search.highlight
     - navigation.top
+    - navigation.footer          # botão próx/anterior entre páginas
+    - content.code.copy
+    - content.code.annotate      # anotações inline no código
+    - search.highlight
+    - search.suggest             # autocomplete na busca
+    - toc.follow                 # sumário acompanha o scroll
+
+# ✅ Plugins para mostrar autor e data de cada página
+plugins:
+  - search
+  - git-authors                  # mostra quem escreveu cada página
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago              # ex: "3 days ago"
+
+# ✅ Links sociais no rodapé
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/microservices-26-1/microservices
+      name: Repositório do projeto
 
 markdown_extensions:
+  - attr_list        # ← adicionar
+  - md_in_html       # ← adicionar
   - admonition
   - pymdownx.superfences
   - pymdownx.details
@@ -45,5 +64,5 @@ nav:
   - Arquitetura: arquitetura.md
   - Serviços: servicos.md
   - Execução: execucao.md
-  - Diagramas: diagramas.md
+  - Diagramas: diagrama.md
   - API: api.md
