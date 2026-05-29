@@ -32,3 +32,6 @@
 [submodule "api/order"]
 	path = api/order
 	url = https://github.com/microservices-26-1/order.git
+[submodule "api/postgres"]
+	path = api/postgres
+	url = https://github.com/microservices-26-1/postgres

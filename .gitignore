@@ -4,9 +4,10 @@ __pycache__/
 *$py.class
 
 volume/
-jenkins/config/jenkins/
+jenkins/config
 # C extensions
 *.so
+*.env
 
 # Distribution / packaging
 .Python
