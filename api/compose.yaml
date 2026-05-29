@@ -103,6 +103,8 @@ services:
     hostname: exchange
     deploy:
       replicas: 1
+    environment:
+      EXCHANGE_API_KEY: ${EXCHANGE_API_KEY}
 
   prometheus:
     image: prom/prometheus:latest
