@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://microservices-26-1.github.io/microservices/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://microservices-26-1.github.io/microservices/api/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://microservices-26-1.github.io/microservices/arquitetura/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
-         <loc>https://microservices-26-1.github.io/microservices/diagrama/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <loc>https://microservices-26-1.github.io/microservices/custos/</loc>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://microservices-26-1.github.io/microservices/execucao/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <lastmod>2026-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://microservices-26-1.github.io/microservices/monitoramento/</loc>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://microservices-26-1.github.io/microservices/servicos/</loc>
-         <lastmod>2026-05-26</lastmod>
+         <lastmod>2026-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://microservices-26-1.github.io/microservices/testes/</loc>
+         <lastmod>2026-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://microservices-26-1.github.io/microservices/videos/</loc>
+         <lastmod>2026-05-30</lastmod>
     </url>
 </urlset>

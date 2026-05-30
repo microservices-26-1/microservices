@@ -53,8 +53,6 @@
       
     
     
-      <link rel="stylesheet" href="css/timeago.css">
-    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#projeto-de-microservices" class="md-skip">
+        <a href="#microservices-store-platform" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -247,17 +245,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="arquitetura/" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="arquitetura/" class="md-tabs__link">
+          
   
-  Arquitetura
+  
+  Projeto
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -266,17 +265,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="servicos/" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="execucao/" class="md-tabs__link">
+          
   
-  Serviços
+  
+  Operação
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -285,55 +285,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="execucao/" class="md-tabs__link">
-        
-  
-  
     
-  
-  Execução
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="diagrama/" class="md-tabs__link">
-        
-  
-  
     
+      <li class="md-tabs__item">
+        <a href="testes/" class="md-tabs__link">
+          
   
-  Diagramas
+  
+  Validação
 
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="api/" class="md-tabs__link">
-        
-  
-  
+        </a>
+      </li>
     
-  
-  API
-
-      </a>
-    </li>
   
 
       
@@ -449,10 +412,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#visao-geral" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Objetivo
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-o-site-mostra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que o site mostra
       
     </span>
   </a>
@@ -463,18 +437,7 @@
   <a href="#tecnologias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🛠️ Tecnologias
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arquitetura" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Arquitetura
+        Tecnologias
       
     </span>
   </a>
@@ -485,7 +448,7 @@
   <a href="#equipe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👥 Equipe
+        Equipe
       
     </span>
   </a>
@@ -502,6 +465,58 @@
     
       
       
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -526,9 +541,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -553,9 +569,97 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -580,22 +684,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="diagrama/" class="md-nav__link">
+      <a href="monitoramento/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Diagramas
+    Monitoramento
   
 
     
@@ -607,22 +712,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="api/" class="md-nav__link">
+      <a href="custos/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    API
+    Custos
   
 
     
@@ -631,6 +737,129 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="videos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vídeos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -662,10 +891,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#visao-geral" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Objetivo
+        Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-o-site-mostra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que o site mostra
       
     </span>
   </a>
@@ -676,18 +916,7 @@
   <a href="#tecnologias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🛠️ Tecnologias
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arquitetura" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Arquitetura
+        Tecnologias
       
     </span>
   </a>
@@ -698,7 +927,7 @@
   <a href="#equipe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👥 Equipe
+        Equipe
       
     </span>
   </a>
@@ -725,77 +954,41 @@
   
 
 
-<h1 id="projeto-de-microservices">🚀 Projeto de Microservices<a class="headerlink" href="#projeto-de-microservices" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>Sistema baseado em microserviços desenvolvido para a disciplina de<br />
-<strong>Platforms, Microservices, DevOps and APIs — Insper 2026</strong></p>
-</blockquote>
-<hr />
-<h2 id="objetivo">🎯 Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
-<p>Sistema distribuído com arquitetura de microserviços, integrando autenticação,
-gerenciamento de contas, produtos e pedidos através de um API Gateway centralizado.</p>
-<hr />
-<h2 id="tecnologias">🛠️ Tecnologias<a class="headerlink" href="#tecnologias" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
+<h1 id="microservices-store-platform">Microservices — Store Platform<a class="headerlink" href="#microservices-store-platform" title="Permanent link">&para;</a></h1>
+<p>Projeto da disciplina <strong>Platforms, Microservices, DevOps and APIs — 2026.1</strong>.</p>
+<h2 id="visao-geral">Visão geral<a class="headerlink" href="#visao-geral" title="Permanent link">&para;</a></h2>
+<p>A solução foi organizada como uma plataforma de microsserviços com <strong>Gateway</strong>, <strong>Auth</strong>, <strong>Account</strong>, <strong>Product</strong>, <strong>Order</strong> e <strong>Exchange</strong>, com persistência em PostgreSQL, observabilidade com Prometheus/Grafana e deploy em AWS EKS.</p>
+<p><img alt="Arquitetura geral" src="img/overview-eks.png" /></p>
+<h2 id="o-que-o-site-mostra">O que o site mostra<a class="headerlink" href="#o-que-o-site-mostra" title="Permanent link">&para;</a></h2>
 <ul>
-<li>:fontawesome-brands-java: <strong>Java</strong> — linguagem principal dos serviços</li>
-<li>:simple-springboot: <strong>Spring Boot</strong> — framework de cada microservice</li>
-<li>:fontawesome-brands-docker: <strong>Docker</strong> — containerização dos serviços</li>
-<li>:material-docker: <strong>Docker Compose</strong> — orquestração local</li>
-<li>:material-api: <strong>API Gateway</strong> — ponto de entrada único</li>
+<li>arquitetura da solução</li>
+<li>serviços e responsabilidades</li>
+<li>rotas principais da API</li>
+<li>execução local e CI/CD</li>
+<li>monitoramento e resultados</li>
+<li>testes de carga</li>
+<li>custos AWS</li>
+<li>vídeos de demonstração</li>
 </ul>
-</div>
-<hr />
-<h2 id="arquitetura">🏗️ Arquitetura<a class="headerlink" href="#arquitetura" title="Permanent link">&para;</a></h2>
-<p>O sistema é composto por <strong>5 microserviços independentes</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Serviço</th>
-<th>Responsabilidade</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>🔐 Auth Service</td>
-<td>Autenticação e autorização</td>
-</tr>
-<tr>
-<td>🏦 Account Service</td>
-<td>Gerenciamento de contas de usuário</td>
-</tr>
-<tr>
-<td>📦 Product Service</td>
-<td>Catálogo de produtos</td>
-</tr>
-<tr>
-<td>🛒 Order Service</td>
-<td>Processamento de pedidos</td>
-</tr>
-<tr>
-<td>🌐 Gateway Service</td>
-<td>Roteamento e entrada da API</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="equipe">👥 Equipe<a class="headerlink" href="#equipe" title="Permanent link">&para;</a></h2>
-<div class="grid cards">
+<h2 id="tecnologias">Tecnologias<a class="headerlink" href="#tecnologias" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>:fontawesome-brands-github: <strong>Gustavo Santana</strong></p>
-<hr />
-<p>Backend, DevOps, Arquitetura</p>
-<p><a href="https://github.com/YouCanCallMeGus">:octicons-arrow-right-24: GitHub</a></p>
-</li>
-<li>
-<p>:fontawesome-brands-github: <strong>Ana Beatriz da Cunha</strong></p>
-<hr />
-<p>Backend, Documentação, Testes</p>
-<p><a href="https://github.com/aninhaabc">:octicons-arrow-right-24: GitHub</a></p>
-</li>
+<li>Java 21</li>
+<li>Spring Boot</li>
+<li>Spring Cloud Gateway</li>
+<li>Spring Security / JWT</li>
+<li>OpenFeign</li>
+<li>PostgreSQL</li>
+<li>Docker Compose</li>
+<li>Jenkins</li>
+<li>Prometheus</li>
+<li>Grafana</li>
+<li>AWS EKS</li>
 </ul>
-</div>
+<h2 id="equipe">Equipe<a class="headerlink" href="#equipe" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ana Beatriz da Cunha</li>
+<li>Gustavo Santana</li>
+</ul>
 
 
 
@@ -803,54 +996,6 @@ gerenciamento de contas, produtos e pedidos através de um API Gateway centraliz
 
 
 
-  
-    
-  
-  
-    
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Última atualização">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="24 de maio de 2026 23:30:15 UTC"><span class="timeago" datetime="2026-05-24T23:30:15+00:00" locale="pt_BR"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="24 de maio de 2026 23:30:15 UTC">2026-05-24</span>
-  </span>
-
-    
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Criado em">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="22 de fevereiro de 2026 18:41:26 UTC"><span class="timeago" datetime="2026-02-22T18:41:26+00:00" locale="pt_BR"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="22 de fevereiro de 2026 18:41:26 UTC">2026-02-22</span>
-  </span>
-
-    
-    
-      
-  
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Contribuidores">
-      
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
-      
-    </span>
-    <nav>
-      
-        <a href="mailto:133781643+aninhaabc@users.noreply.github.com">Ana Beatriz da Cunha</a>, 
-        <a href="mailto:not.committed.yet">Not Committed Yet</a>
-    </nav>
-  </span>
-
-    
-    
-  </aside>
 
 
 
@@ -940,10 +1085,6 @@ gerenciamento de contas, produtos e pedidos através de um API Gateway centraliz
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="js/timeago.min.js"></script>
-      
-        <script src="js/timeago_mkdocs_material.js"></script>
       
     
   </body>
