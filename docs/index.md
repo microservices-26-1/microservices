@@ -1,63 +1,39 @@
-# 🚀 Projeto de Microservices
+# Microservices — Store Platform
 
-> Sistema baseado em microserviços desenvolvido para a disciplina de  
-> **Platforms, Microservices, DevOps and APIs — Insper 2026**
+Projeto da disciplina **Platforms, Microservices, DevOps and APIs — 2026.1**.
 
----
+## Visão geral
 
-## 🎯 Objetivo
+A solução foi organizada como uma plataforma de microsserviços com **Gateway**, **Auth**, **Account**, **Product**, **Order** e **Exchange**, com persistência em PostgreSQL, observabilidade com Prometheus/Grafana e deploy em AWS EKS.
 
-Sistema distribuído com arquitetura de microserviços, integrando autenticação,
-gerenciamento de contas, produtos e pedidos através de um API Gateway centralizado.
+![Arquitetura geral](img/overview-eks.png)
 
----
+## O que o site mostra
 
-## 🛠️ Tecnologias
+- arquitetura da solução
+- serviços e responsabilidades
+- rotas principais da API
+- execução local e CI/CD
+- monitoramento e resultados
+- testes de carga
+- custos AWS
+- vídeos de demonstração
 
-<div class="grid cards" markdown>
+## Tecnologias
 
-- :fontawesome-brands-java: **Java** — linguagem principal dos serviços
-- :simple-springboot: **Spring Boot** — framework de cada microservice
-- :fontawesome-brands-docker: **Docker** — containerização dos serviços
-- :material-docker: **Docker Compose** — orquestração local
-- :material-api: **API Gateway** — ponto de entrada único
+- Java 21
+- Spring Boot
+- Spring Cloud Gateway
+- Spring Security / JWT
+- OpenFeign
+- PostgreSQL
+- Docker Compose
+- Jenkins
+- Prometheus
+- Grafana
+- AWS EKS
 
-</div>
+## Equipe
 
----
-
-## 🏗️ Arquitetura
-
-O sistema é composto por **5 microserviços independentes**:
-
-| Serviço | Responsabilidade |
-|---|---|
-| 🔐 Auth Service | Autenticação e autorização |
-| 🏦 Account Service | Gerenciamento de contas de usuário |
-| 📦 Product Service | Catálogo de produtos |
-| 🛒 Order Service | Processamento de pedidos |
-| 🌐 Gateway Service | Roteamento e entrada da API |
-
----
-
-## 👥 Equipe
-
-<div class="grid cards" markdown>
-
--   :fontawesome-brands-github: **Gustavo Santana**
-
-    ---
-
-    Backend, DevOps, Arquitetura
-
-    [:octicons-arrow-right-24: GitHub](https://github.com/YouCanCallMeGus)
-
--   :fontawesome-brands-github: **Ana Beatriz da Cunha**
-
-    ---
-
-    Backend, Documentação, Testes
-
-    [:octicons-arrow-right-24: GitHub](https://github.com/aninhaabc)
-
-</div>
+- Ana Beatriz da Cunha
+- Gustavo Santana

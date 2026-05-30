@@ -27,22 +27,16 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
-    - navigation.footer          # botão próx/anterior entre páginas
+    - navigation.footer
     - content.code.copy
-    - content.code.annotate      # anotações inline no código
+    - content.code.annotate
     - search.highlight
-    - search.suggest             # autocomplete na busca
-    - toc.follow                 # sumário acompanha o scroll
+    - search.suggest
+    - toc.follow
 
-# ✅ Plugins para mostrar autor e data de cada página
 plugins:
   - search
-  - git-authors                  # mostra quem escreveu cada página
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago              # ex: "3 days ago"
 
-# ✅ Links sociais no rodapé
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -50,8 +44,8 @@ extra:
       name: Repositório do projeto
 
 markdown_extensions:
-  - attr_list        # ← adicionar
-  - md_in_html       # ← adicionar
+  - attr_list
+  - md_in_html
   - admonition
   - pymdownx.superfences
   - pymdownx.details
@@ -61,8 +55,14 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Arquitetura: arquitetura.md
-  - Serviços: servicos.md
-  - Execução: execucao.md
-  - Diagramas: diagrama.md
-  - API: api.md
+  - Projeto:
+      - Arquitetura: arquitetura.md
+      - Serviços: servicos.md
+      - API: api.md
+  - Operação:
+      - Execução: execucao.md
+      - Monitoramento: monitoramento.md
+      - Custos: custos.md
+  - Validação:
+      - Testes: testes.md
+      - Vídeos: videos.md
